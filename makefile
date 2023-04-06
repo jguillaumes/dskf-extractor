@@ -1,16 +1,17 @@
 # CFLAGS = -g -O0
 CFLAGS = -O
 
-all: subdir ./bin/dskdecode
+all: subdir ./bin/dskfextract
 
 .PHONY: clean subdir
 
 clean: 
-	rm -rf ./bin
+	-rm -rf ./bin 2> /dev/null
+	-find . -name "*.dSYM" -type d -exec rm -rf {} \;
 
 subdir:
-	-mkdir ./bin
+	-@mkdir -p ./bin 2> /dev/null
 
 
-./bin/dskdecode: src/dskdecode.c src/dskdecode.h
+./bin/dskfextract: src/dskfextract.c src/dskfextract.h
 	clang $< -o $@ $(CFLAGS)

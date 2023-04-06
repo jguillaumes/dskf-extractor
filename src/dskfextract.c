@@ -4,11 +4,11 @@
 #include <memory.h>
 #include <getopt.h>
 
-#include "dskdecode.h"
+#include "dskfextract.h"
 
 
 void syntax() {
-    fprintf(stderr, "Usage: dskdecode infile outfile\n");
+    fprintf(stderr, "Usage: dskdecode -i dskf_image -o raw_image\n");
 }
 
 int main(int argc, char **argv) {
