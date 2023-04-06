@@ -1,6 +1,7 @@
 # CFLAGS = -g -O0
 CFLAGS = -O
 
+
 all: subdir ./bin/dskfextract
 
 .PHONY: clean subdir
@@ -14,4 +15,4 @@ subdir:
 
 
 ./bin/dskfextract: src/dskfextract.c src/dskfextract.h
-	clang $< -o $@ $(CFLAGS)
+	$(CC) $< -o $@ $(CFLAGS)
