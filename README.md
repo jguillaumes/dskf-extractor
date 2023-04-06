@@ -26,4 +26,4 @@ You should get the executable built in the ```./bin``` subdirectory.
 
 The information about the DSKF header structure was obtained from [this web page](http://justsolve.archiveteam.org/wiki/LoadDskF/SaveDskF). Many thanks for providing this information.
 
-Also, the teams building and maintaining emulators, like [DosBox](dosbox), [DosBox-X](https://dosbox-x.com), [86Box](https://86box.net) and [PCem](https://pcem-emulator.co.uk) are much more are **real heroes**. Keep up the good work!
+Also, the teams building and maintaining emulators, like [DosBox](dosbox), [DosBox-X](https://dosbox-x.com), [86Box](https://86box.net) and [PCem](https://pcem-emulator.co.uk) and others are **real heroes**. Keep up the good work!
